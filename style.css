@@ -2696,4 +2696,12 @@ BDO[DIR="rtl"] {
   }
 }
 
+/*	Assistive (Accessibility) Text
+-------------------------------------------------------------- */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
