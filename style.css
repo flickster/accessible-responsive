@@ -2701,7 +2701,14 @@ BDO[DIR="rtl"] {
 
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	position: absolute !important;
+}
+
+.screen-reader-text:focus {
+	clip: auto !important;
+	position: absolute;
+	z-index: 100000; /* Above WP toolbar */
 }
 
 /*The last 29 days of the month are the hardest."- Nikola Tesla*/
